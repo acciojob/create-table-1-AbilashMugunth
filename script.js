@@ -3,8 +3,8 @@ let count=0
 function insert_Row() {
   let td1 = document.createElement("td");
   let td2 = document.createElement("td");
-  td1.innerText = `New Cell${++count}`;
-  td2.innerText = `New Cell${++count}`;
+  td1.innerText = `New cell${++count}`;
+  td2.innerText = `New cell${++count}`;
 
   let tr = document.createElement("tr");
   tr.append(td1, td2);
