@@ -1,13 +1,9 @@
 let table = document.querySelector("#sampleTable");
-let count=0
 function insert_Row() {
-  let td1 = document.createElement("td");
-  let td2 = document.createElement("td");
-  td1.innerText = `New cell${++count}`;
-  td2.innerText = `New cell${++count}`;
-
-  let tr = document.createElement("tr");
-  tr.append(td1, td2);
-
-  table.insertAdjacentElement("afterbegin", tr);
+ var table = document.getElementById("sampleTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "New Cell1";
+  cell2.innerHTML = "New Cell2";
 }
